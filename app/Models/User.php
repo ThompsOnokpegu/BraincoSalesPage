@@ -22,6 +22,12 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'whatsapp',
+        'city',
+        'reference',
+        'amount_paid',
+        'currency',
+        'payment_status',
     ];
 
     /**

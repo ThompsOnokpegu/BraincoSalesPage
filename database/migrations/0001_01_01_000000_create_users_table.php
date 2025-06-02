@@ -15,8 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('whatsapp');
+            $table->string('city');
+            $table->string('reference')->unique();
+            $table->boolean('payment_status')->default(false);
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->float('amount_paid')->default(0);
+            $table->string('currency')->default('NGN');
+            $table->string('password')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -1,11 +1,28 @@
 <?php
 
+use App\Http\Controllers\CheckoutController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+
+Route::get('/checkout', function () {
+    return view('checkout');           // The Blade form you already created
+})->name('checkout.form');
+
+Route::post('/checkout', [CheckoutController::class, 'process'])
+     ->name('checkout.process');
+
+Route::get('/checkout/callback', [CheckoutController::class, 'callback'])
+     ->name('checkout.callback');
+
+Route::get('/checkout/success', function () {
+    // Show a simple thank‐you or “access granted” page
+    return view('checkout-success');
+})->name('checkout.success');
+
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
