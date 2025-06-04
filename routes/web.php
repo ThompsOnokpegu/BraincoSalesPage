@@ -23,6 +23,7 @@ Route::get('/checkout/success', function () {
     return view('checkout-success');
 })->name('checkout.success');
 
+Route::post('/webhook',[CheckoutController::class,'handleWebhook'])->name('webhook');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

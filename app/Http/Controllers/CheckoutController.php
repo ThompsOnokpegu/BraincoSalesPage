@@ -163,4 +163,18 @@ class CheckoutController extends Controller
             ->route('checkout.form')
             ->with('error', 'Payment was not successful or was canceled.');
     }
+
+    /**
+     * Handle incoming webhook requests from Paystack.
+     *
+     * This method is called by Paystack to notify us of events like payment success,
+     * refunds, etc. We can use this to update our records without user interaction.
+     */
+
+    public function handleWebHook(Request $request){
+        
+        $response =  $this->paystack->handleWebhook($request);
+        return $response;
+
+    }
 }
