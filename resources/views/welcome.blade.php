@@ -103,7 +103,7 @@
     
           <div class="text-center mt-10">
             <a href="{{ route('checkout.form') }}" class="inline-block bg-yellow-200 text-black font-bold px-6 py-5 rounded-full">
-              CLICK HERE TO JOIN FOR JUST ₦2000 →
+              CLICK HERE TO JOIN FOR JUST ₦{{ $amount }} →
             </a>
         </div>
         {{-- BONUS OFFER --}}
@@ -165,7 +165,7 @@
     
           <div class="text-center mt-8">
             <a href="{{ route('checkout.form') }}" class="inline-block bg-red-600 text-white font-bold px-6 py-5 rounded-full">
-              CLICK HERE TO JOIN FOR JUST ₦2000 →
+              CLICK HERE TO JOIN FOR JUST ₦{{ $amount }} →
             </a>
           </div>
         </div>
@@ -202,7 +202,7 @@
     
           <div class="text-center mt-8">
             <a href="{{ route('checkout.form') }}" class="inline-block bg-yellow-200 text-black font-bold px-6 py-5 rounded-full">
-              CLICK HERE TO JOIN FOR JUST ₦2000 →
+              CLICK HERE TO JOIN FOR JUST ₦{{ $amount }} →
             </a>
           </div>
         </div>

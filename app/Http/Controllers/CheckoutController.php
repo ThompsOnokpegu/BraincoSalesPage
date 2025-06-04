@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Log;
 class CheckoutController extends Controller
 {
     protected $paystack;
-    private $amount = 2000;
+    private $amount = 3000;
 
     public function __construct(PaystackService $paystack)
     {

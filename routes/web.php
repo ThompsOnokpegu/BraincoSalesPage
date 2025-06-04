@@ -5,7 +5,8 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    return view('welcome');
+    $amount = 3000; // Set the amount to be passed to the view
+    return view('welcome',compact('amount')); // Pass the amount to the view
 })->name('home');
 
 Route::get('/checkout', function () {

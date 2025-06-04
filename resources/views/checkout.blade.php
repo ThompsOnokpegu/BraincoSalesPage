@@ -63,7 +63,7 @@
                 name="full_name"
                 value="{{ old('full_name') }}"
                 class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-600"
-                placeholder="John Doe"
+                placeholder="Ruth Frank"
                 />
                 @error('full_name')
                 <p class="text-sm text-red-500 mt-1">{{ $message }}</p>
@@ -81,7 +81,7 @@
                 name="email"
                 value="{{ old('email') }}"
                 class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-600"
-                placeholder="you@example.com"
+                placeholder="youremail@example.com"
                 />
                 @error('email')
                 <p class="text-sm text-red-500 mt-1">{{ $message }}</p>
@@ -125,13 +125,14 @@
             </div>
 
             {{-- Pay Now Button --}}
-            <button
-                type="submit"
-                class="w-full bg-red-600 flex hover:bg-red-700 text-white font-semibold py-3 rounded transition"
+            <button 
+              type="submit" 
+              class="w-full bg-red-600 flex hover:bg-red-700 text-white font-semibold py-3 rounded transition cursor-pointer"
             >
-                <span class="text-start pl-6" style="width: 74%">Proceed to Payment</span>
-                <span style="width: 26%">₦2000</span>
+              <span class="text-start pl-6" style="width: 74%">Proceed to Payment</span>
+              <span style="width: 26%">₦3000</span> 
             </button>
+
             </form>
           </div>
         </div>
