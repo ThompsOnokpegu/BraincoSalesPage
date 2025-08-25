@@ -137,7 +137,7 @@
               class="w-full bg-red-600 flex hover:bg-red-700 text-white font-semibold py-3 rounded transition cursor-pointer"
             >
               <span class="text-start pl-6" style="width: 74%">Proceed to Payment</span>
-              <span style="width: 26%">₦3000</span> 
+              <span style="width: 26%">{{ $amount }}</span> 
             </button>
 
             </form>

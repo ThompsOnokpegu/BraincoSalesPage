@@ -5,12 +5,13 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 Route::get('/', function () {
-    $amount = 3000; // Set the amount to be passed to the view
+    $amount = 2000; // Set the amount to be passed to the view
     return view('welcome',compact('amount')); // Pass the amount to the view
 })->name('home');
 
 Route::get('/checkout', function () {
-    return view('checkout');           // The Blade form you already created
+    $amount = 2000; // Set the amount to be passed to the view
+    return view('checkout',compact('amount'));           // The Blade form you already created
 })->name('checkout.form');
 
 Route::post('/checkout', [CheckoutController::class, 'process'])
