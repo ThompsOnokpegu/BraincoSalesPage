@@ -201,7 +201,7 @@
             </p>
             <p class="font-semibold mt-4 text-yellow-200 text-2xl" style="text-transform: none;">Registration Ends In 24 Hours</p>
             <p>
-              And the next class isn’t until September, 2025. I wonder how much you will have missed out on before then 
+              And the next class isn’t until November, 2025. I wonder how much you will have missed out on before then 
               because you don’t know how to create content for your business.
             </p>
           </div>
